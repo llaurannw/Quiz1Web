@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz 1 Web</title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            grid-template-rows: 2fr 1fr;
+            gap: 2px;
+            width: 500px;
+            height: 500px;
+            background-color: #333;
+            padding: 2px;
+            margin: 20px auto;
+        }
+
+        .item {
+            background-color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+        .outer-box {
+            background-color: white;
+            padding: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .inner-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 2px;
+            background-color: #333;
+            width: 90%;
+            height: 90%;
+            border: 2px solid #333;
+        }
+
+        .inner-grid .item {
+            border: 2px solid #333;
+            margin: 0;
+        }
+
+        .item-g {
+            grid-column: 2;
+            grid-row: 2;
+        }
+
+        .item-f {
+            grid-column: 1;
+            grid-row: 2;
+        }
+
+        .item-a {
+            grid-column: 1;
+            grid-row: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item item-a">A</div>
+        
+        <div class="outer-box">
+            <div class="inner-grid">
+                <div class="item">B</div>
+                <div class="item">C</div>
+                <div class="item">D</div>
+                <div class="item">E</div>
+            </div>
+        </div>
+        
+        <div class="item item-f">F</div>
+        <div class="item item-g">G</div>
+    </div>
+</body>
+</html>
